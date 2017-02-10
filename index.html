@@ -1,419 +1,373 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Орион-Телеком</title>
-    <!-- Path to Framework7 Library CSS-->
-    <link rel="stylesheet" href="css/framework7.ios.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
-  </head>
-<body>
-  <!-- Status bar overlay for fullscreen mode-->
-  <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-      <div class="panel panel-left panel-reveal">
-        <div class="list-block">
-        <ul>
-          <li>
-          <a href="#view-1" class="tab-link close-panel">
-            <div class="item-content">
-              <div class="item-media"><i class="icon icon-f7"></i></div>
-              <div class="item-inner">
-                <div class="item-title">Главная</div>
-                <div class="item-after"><i class="icon icon-forward"></i></div>
-              </div>
-            </div>
-          </a>
-          </li>
-          <li>
-          <a href="#view-2" class="tab-link close-panel"> 
-            <div class="item-content">
-              <div class="item-media"><i class="icon icon-f7"></i></div>
-              <div class="item-inner">
-                <div class="item-title">Услуги</div>
-                <div class="item-after"><i class="icon icon-forward"></i></div>
-              </div>
-            </div>
-          </a>
-          </li>
-          <li>
-          <a href="#view-3" class="tab-link close-panel"> 
-            <div class="item-content">
-              <div class="item-media"><i class="icon icon-f7"></i></div>
-              <div class="item-inner">
-                <div class="item-title">Новости</div>
-                <div class="item-after"><i class="icon icon-forward"></i></div>
-              </div>
-            </div>
-          </a>
-          </li>
-          <li>
-          <a href="#view-4" class="tab-link close-panel">
-            <div class="item-content">
-              <div class="item-media"><i class="icon icon-f7"></i></div>
-                <div class="item-inner">
-                  <div class="item-title">Дополнительно</div>
-                  <div class="item-after"><i class="icon icon-forward"></i></div>
-                </div>
-            </div>
-          </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<title>Орион-Телеком</title>
+<!-- Path to Framework7 Library CSS-->
+		<link rel="stylesheet" href="css/framework7.material.css">
+<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="css/my-app.css">
+	</head>
+	<body>
+<!-- Status bar overlay for fullscreen mode-->
+  		<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+    	<div class="panel-overlay"></div>
+<!-- Левая панель с эффектом "reval"-->
+      	<div class="panel panel-left panel-reveal">
+        	<div class="list-block">
+        		<ul>
+					
+					<li><a href="#view-1" class="tab-link close-panel">
+						<div class="item-content">
+						  <div class="item-media"><i class="icon icon-f7"></i></div>
+						  	<div class="item-inner">
+								<div class="item-title">Главная</div>
+								<div class="item-after"><i class="icon icon-forward"></i></div>
+						  </div>
+						</div>
+					</a></li>
+          			
+					<li><a href="#view-2" class="tab-link close-panel"> 
+            			<div class="item-content">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title">Услуги</div>
+								<div class="item-after"><i class="icon icon-forward"></i></div>
+              				</div>
+            			</div>
+					</a></li>
+          
+					<li><a href="#view-3" class="tab-link close-panel"> 
+						<div class="item-content">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title">Новости</div>
+								<div class="item-after"><i class="icon icon-forward"></i></div>
+							</div>
+						</div>
+					</a></li>
+          
+					<li><a href="#view-4" class="tab-link close-panel">
+						<div class="item-content">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title">Дополнительно</div>
+								<div class="item-after"><i class="icon icon-forward"></i></div>
+							</div>
+						</div>
+					 </a></li>
+        		</ul>
+			</div>
+		</div>
+		
   <!-- Views, and they are tabs-->
   <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
-  <div class="login-screen modal-in">
-    <div class="page-content">
-      <div class="content-block">
-        <p><a href="#" class="open-login-screen">Красноярск</a></p>
-        <p><a href="#" class="open-login-screen">Абакан</a></p>
-        <p><a href="#" class="open-login-screen">Канск</a></p>
-        <p><a href="#" class="open-login-screen">Иркутск</a></p>
-      </div>
-    </div>
-    <div class="login-screen">
-    <div class="view">
-      <div class="page">
-        <div class="page-content login-screen-content">
-          <div class="login-screen-title">Орион телеком</div>
-          <form>
-            <div class="list-block">
-              <ul>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title label">Логин</div>
-                    <div class="item-input">
-                      <input type="text" name="123" placeholder="Ваш логин">
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title label">Пароль</div>
-                    <div class="item-input">
-                      <input type="password" name="123" placeholder="Ваш пароль">
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <div class="list-block-label">
-                <p><a href="#" class="close-login-screen">Вход</a></p>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+		<div class="login-screen modal-in">
+			<div class="page-content">
+				<div class="content-block">
+					<a href="#" class="open-login-screen"><p class="helloworld">Войти в личный кабинет</p></a>
+				</div>
+			</div>
+			<div class="login-screen">
+				<div class="view">
+					<div class="page">
+						<div class="page-content login-screen-content">
+							<div class="login-screen-title">Орион телеком</div>
+							<form>
+								<div class="list-block">
+									<ul>
+										<li class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">Логин</div>
+												<div class="item-input">
+													<input type="text" name="123" placeholder="Ваш логин">
+												</div>
+											</div>
+										</li>
+										<li class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">Пароль</div>
+												<div class="item-input">
+													<input type="password" name="123" placeholder="Ваш пароль">
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="list-block">
+									<div class="list-block-label">
+										<p><a href="#" class="close-login-screen">Вход</a></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="views tabs toolbar-through">
+<!-- Моя первая view, для врап Главная it is also a .tab and should have "active" class to make it visible by default-->
+    		<div id="view-1" class="view view-main tab active">
+				<a href="#" class="open-panel link floating-button color-blue"><i class="icon icon-bars"></i></a>
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="center sliding">Главная</div>
+					</div>
+        		</div>
+<!--Страница-->
+				<div class="pages navbar-through">
+<!-- Page, data-page contains page name-->
+					<div data-page="index-1" class="page">
+<!-- Scrollable page content-->
+						<div class="page-content">   
+	<!-- Separate collapsibles - omit "accordion-list" class-->
 
-  </div>
-  <div class="views tabs toolbar-through">
-    <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+							<div class="list-block">
+								<ul>
 
-    <div id="view-1" class="view view-main tab active">
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Баланс</div>
+										</div>
+										</a>
+										<div class="accordion-item-content">
+											<div class="content-block"><p>Сюда я как то запилю баланс)</p></div>
+										</div>
+									</li>
 
-      <div class="navbar">
-        <div class="navbar-inner">
-          <div class="center sliding">Главная</div>
-            <div class="right">
-             <a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a>
-            </div>
-          </div>
-        </div>
-          <!-- Pages-->
-        <div class="pages navbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index-1" class="page">
-            <!-- Scrollable page content-->
-            <div class="page-content">   
-              <!-- Separate collapsibles - omit "accordion-list" class-->
-              <div class="content-block-title">Добро пожаловать</div>
-              <div class="list-block">
-              <ul>
-                <li class="accordion-item"><a href="#" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">Баланс</div>
-                  </div>
-                </a>
-                  <div class="accordion-item-content">
-                   <div class="content-block"><p>Сюда я как то запилю баланс)</p></div>
-                  </div>
-                </li>
-                <li class="accordion-item"><a href="#" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">Обещанный платеж</div>
-                  </div>
-                </a>
-                  <div class="accordion-item-content">
-                    <div class="content-block"><p>Сюда я как то запилю обещанный платеж)</p>
-                      <p class="buttons-row">
-                       <a href="#" class="button active">Включить</a>
-                       <a href="#" class="button">Выключить</a>
-                      </p>          
-                    </div>
-                   </div>
-                </li>
-                <li class="accordion-item"><a href="#" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">Тариф</div>
-                  </div>
-                </a>
-                  <div class="accordion-item-content">
-                    <div class="content-block"><p>Сюда я как то запилю тариф)</p></div>
-                  </div>
-                </li>
-                <li class="accordion-item"><a href="#" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">Лицевой счет</div>
-                  </div>
-                </a>
-                  <div class="accordion-item-content">
-                    <div class="content-block"><p>Сюда я как то запилю лицевой счет</p></div>
-                  </div>
-                </li>
-                <li class="accordion-item"><a href="#" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">IP-Адреса</div>
-                  </div>
-                </a>
-                  <div class="accordion-item-content">
-                    <div class="content-block"><p>Сюда я как то запилю ip адреса</p></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Second view (for second wrap)-->
-      <div id="view-2" class="view tab">
-        <!-- We can make with view with navigation, let's add Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-              <div class="left">
-                <a href="#view-1" class="tab-link">
-                <i class="icon icon-back"></i>
-                </a>
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Обещанный платеж</div>
+										</div>
+									</a>
+										<div class="accordion-item-content">
+											<div class="content-block"><p>Сюда я как то запилю обещанный платеж)</p>
+												<p class="buttons-row">
+													<a href="#" class="button active">Включить</a>
+													<a href="#" class="button">Выключить</a>
+												</p>          
+											</div>
+										</div>
+									</li>
 
-            </div>
-            <div class="center sliding">Услуги</div>
-            <div class="right">
-              <a href="#" class="open-panel link icon-only">
-              <i class="icon icon-bars"></i></a>
-            </div>
-        </div>
-        </div>
-        <div class="pages navbar-through">
-          <div data-page="index-2" class="page">
-            <div class="page-content">
-         
-        <!-- Separate collapsibles - omit "accordion-list" class-->
-<div class="list-block">
-  <ul>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Почтовый ящик</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю Почтовый ящик</p>
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Белый(внешний IP)</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю Белый(внешний IP))</p>        
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Услуга дозаправка</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю услугу дозаправка)</p>
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">SMS/Email уведомления</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю SMS/Email уведомления</p>
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">SMS-Информатор</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю SMS-Информатор</p>
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Турбо режим</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю турбо режим</p>
-        </div>
-      </div>
-    </li>
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Тариф</div>
+										</div>
+									</a>
+										<div class="accordion-item-content">
+											<div class="content-block"><p>Сюда я как то запилю тариф)</p></div>
+										</div>
+									</li>
 
-  </ul>
-</div>       
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Лицевой счет</div>
+										</div>
+									</a>
+										<div class="accordion-item-content">
+											<div class="content-block"><p>Сюда я как то запилю лицевой счет</p></div>
+										</div>
+									</li>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="view-3" class="view tab">
-        <div class="navbar">
-          <div class="navbar-inner">
-          <div class="left">
-                <a href="#view-1" class="tab-link">
-                <i class="icon icon-back"></i>
-                </a>
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">IP-Адреса</div>
+										</div>
+									</a>
+										<div class="accordion-item-content">
+											<div class="content-block"><p>Сюда я как то запилю ip адреса</p></div>
+										</div>
+									</li>
 
-            </div>
-            <div class="center sliding">Новости</div>
-            <div class="right">
-              <a href="#" class="open-panel link icon-only">
-              <i class="icon icon-bars"></i></a>
-          </div>
-        </div>
-        </div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- Вторая view (Для wrap Услуги)-->
+      		<div id="view-2" class="view tab">
+ <!-- We can make with view with navigation, let's add Top Navbar-->
+				<a href="#" class="open-panel link floating-button color-blue"><i class="icon icon-bars"></i></a>
+
+				<div class="pages navbar-through">
+          			<div data-page="index-2" class="page">
+            			<div class="page-content">
+<!-- Separate collapsibles - omit "accordion-list" class-->
+							<div class="list-block">
+  								<ul>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+        								<div class="item-inner">
+											<div class="item-title">Почтовый ящик</div>
+        								</div></a>
+      									<div class="accordion-item-content">
+        									<div class="content-block">
+												<p>Сюда я как то запилю Почтовый ящик</p>
+											</div>
+     									 </div>
+    								</li>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Белый(внешний IP)</div>
+										</div></a>
+      									<div class="accordion-item-content">
+											<div class="content-block">
+												<p>Сюда я как то запилю Белый(внешний IP))</p>        
+        									</div>
+      									</div>
+    								</li>
+									
+    								<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Услуга дозаправка</div>
+										</div></a>
+										<div class="accordion-item-content">
+        									<div class="content-block">
+												<p>Сюда я как то запилю услугу дозаправка)</p>
+        									</div>
+										</div>
+    								</li>
+									
+    								<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">SMS/Email уведомления</div>
+        								</div></a>
+										<div class="accordion-item-content">
+											<div class="content-block">
+											  <p>Сюда я как то запилю SMS/Email уведомления</p>
+											</div>
+										</div>
+    								</li>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+										  <div class="item-title">SMS-Информатор</div>
+										</div></a>
+										<div class="accordion-item-content">
+											<div class="content-block">
+												<p>Сюда я как то запилю SMS-Информатор</p>
+											</div>
+									  	</div>
+									</li>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Турбо режим</div>
+										</div></a>
+										<div class="accordion-item-content">
+											<div class="content-block">
+											  <p>Сюда я как то запилю турбо режим</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>       
+						</div>
+					</div>
+        		</div>
+      		</div>
+<!-- Третья view (для wrap Новости)-->			
+      		<div id="view-3" class="view tab">
+				<a href="#" class="open-panel link floating-button color-blue"><i class="icon icon-bars"></i></a>
   <!-- Pages-->
-  <div class="pages navbar-through">
-  <div data-page="index-3" class="page">
-  <div class="page-content">
-
-        <div class="page-content pull-to-refresh-content">
-        <div class="pull-to-refresh-layer">
-        <div class="preloader"></div>
-        <div class="pull-to-refresh-arrow"></div>
-        </div>
-        <div class="list-block media-list">
-          <ul>
-          <li class="item-content">
-            <div class="item-media"><img src="https://dummyimage.com/44/000/ff1" width="44"></div>
-            <div class="item-inner">
-            <div class="item-title-row">
-            <div class="item-title">Yellow Submarine</div>
-            </div>
-            <div class="item-subtitle">Beatles</div>
-            </div>
-          </li>
-          </ul>
-        <div class="list-block-label">
-          <p>Потяни в низ и произойдет магия:) Тут я надеюсь сделаю подгрузку новостей с сайта или журнал активности</p>
-        </div>
-  </div>
-</div>          
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="view-4" class="view tab">
-        <div class="pages navbar-fixed">
-          <div data-page="index-4" class="page">
-            <div class="navbar">
-              <div class="navbar-inner">
-              <div class="left">
-                <a href="#view-1" class="tab-link">
-                <i class="icon icon-back"></i>
-                </a>
-
-            </div>
-                <div class="center">Дополнительно</div>
-                <div class="right">
-              <a href="#" class="open-panel link icon-only">
-              <i class="icon icon-bars"></i></a>
-            </div>
-              </div>
-            </div>
-            <div class="page-content">
-              
-              <div class="list-block">
-  <ul>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Заявления</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю заявления</p>
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Акция 5*5</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю акцию 5*5</p>        
-        </div>
-      </div>
-    </li>
-    <li class="accordion-item"><a href="#" class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title">Смена пароля</div>
-        </div></a>
-      <div class="accordion-item-content">
-        <div class="content-block">
-          <p>Сюда я как то запилю смену пароля</p>
-        </div>
-      </div>
-    </li>
-    
-  </ul>
-</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Bottom Tabbar-->
-      <div class="toolbar tabbar tabbar-labels">
+  				<div class="pages navbar-through">
+  					<div data-page="index-3" class="page">
+						<div class="page-content">
+							<div class="page-content pull-to-refresh-content">
+								<div class="pull-to-refresh-layer">
+									<div class="preloader"></div>
+									<div class="pull-to-refresh-arrow"></div>
+								</div>
+								<div class="list-block media-list">
+									<ul>
+										<li class="item-content">
+											<div class="item-media"><img src="https://dummyimage.com/44/000/ff1" width="44"></div>
+											<div class="item-inner">
+												<div class="item-title-row">
+													<div class="item-title">Yellow Submarine</div>
+												</div>
+												<div class="item-subtitle">Beatles</div>
+											</div>
+										</li>
+									</ul>
+									<div class="list-block-label">
+									  <p>Потяни в низ и произойдет магия:) Тут я надеюсь сделаю подгрузку новостей с сайта или журнал активности</p>
+									</div>
+								</div>
+							</div>          
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- Четвертая view (для wrap Дополнительно)-->		
+      		<div id="view-4" class="view tab">
+				<a href="#" class="open-panel link floating-button color-blue"><i class="icon icon-bars"></i></a>
+        		<div class="pages navbar-fixed">
+					<div data-page="index-4" class="page">
+						<div class="page-content">
+              				<div class="list-block">
+  								<ul>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+        								<div class="item-inner">
+											<div class="item-title">Заявления</div>
+										</div></a>
+										<div class="accordion-item-content">
+											<div class="content-block">
+												<p>Сюда я как то запилю заявления</p>
+											</div>
+										</div>
+									</li>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Акция 5*5</div>
+										</div></a>
+										<div class="accordion-item-content">
+											<div class="content-block">
+												<p>Сюда я как то запилю акцию 5*5</p>        
+											</div>
+										</div>
+									</li>
+									
+									<li class="accordion-item"><a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Смена пароля</div>
+										</div></a>
+										<div class="accordion-item-content">
+											<div class="content-block">
+												<p>Сюда я как то запилю смену пароля</p>
+											</div>
+										</div>
+									</li>
+								
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- Bottom Tabbar-->
+	<div class="toolbar tabbar tabbar-labels">
         <div class="toolbar-inner">
         <a href="#view-1" class="tab-link active">
-          <i class="icon tabbar-demo-icon-1"></i>
           <span class="tabbar-label">Главная</span></a>
         <a href="#view-2" class="tab-link">
-          <i class="icon tabbar-demo-icon-2"></i>
           <span class="tabbar-label">Услуги</span></a>
         <a href="#view-3" class="tab-link"> 
-          <i class="icon tabbar-demo-icon-3">
-          <span class="badge bg-red">4</span></i>
           <span class="tabbar-label">Новости</span></a>
         <a href="#view-4" class="tab-link"> 
-          <i class="icon tabbar-demo-icon-4"></i>
-          <span class="tabbar-label">Дополнительно</span></a>
+          <span class="tabbar-label">Еще</span></a>
         </div>
       </div>
-    </div>
+	
+
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.js"></script>
     <!-- Path to your app js-->
