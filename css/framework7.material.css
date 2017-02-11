@@ -1933,7 +1933,25 @@ i.icon.icon-camera {
 i.icon.icon-f7 {
   width: 24px;
   height: 24px;
-  background-image: url("../img/i-f7-material.png");
+  background-image: url("../img/home.png");
+  border-radius: 3px;
+}
+i.icon.icon-services {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/services.png");
+  border-radius: 3px;
+}
+i.icon.icon-news {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/news.png");
+  border-radius: 3px;
+}
+i.icon.icon-more {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/more.png");
   border-radius: 3px;
 }
 i.icon.icon-next,
