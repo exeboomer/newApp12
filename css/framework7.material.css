@@ -1341,7 +1341,7 @@ html:not(.watch-active-state) .tabbar a.tab-link:active,
 .tabbar a.tab-link.active-state {
   color: #ffffff;
   font-size: 16px;
-  border-bottom: solid #0673CB;
+  border-bottom: solid 8px #FF9000;
 }
 .tabbar .tab-link-highlight {
   position: absolute;
