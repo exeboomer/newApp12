@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   color: #212121;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
   width: 100%;
   -webkit-text-size-adjust: 100%;
@@ -1323,7 +1323,7 @@ html:not(.watch-active-state) .subnavbar a.link:active:before,
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 .tabbar i.icon {
@@ -1340,6 +1340,8 @@ html:not(.watch-active-state) .subnavbar a.link:active:before,
 html:not(.watch-active-state) .tabbar a.tab-link:active,
 .tabbar a.tab-link.active-state {
   color: #ffffff;
+  font-size: 16px;
+  border-bottom: solid #0673CB;
 }
 .tabbar .tab-link-highlight {
   position: absolute;
@@ -2199,7 +2201,7 @@ html.pixel-ratio-3 .content-block-inner:after {
 /* === Lists === */
 .list-block {
   margin: 0px 0;
-  font-size: 16px;
+  font-size: 19px;
 }
 .list-block ul {
   list-style: none;
