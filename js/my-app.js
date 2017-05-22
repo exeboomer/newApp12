@@ -11,12 +11,10 @@ var view2 = myApp.addView('#view-2', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
-var view3 = myApp.addView('#view-3');
-var view4 = myApp.addView('#view-4');
 
 // Dummy Content
-var songs = ['Yellow Submarine', 'Don\'t Stop Me Now', 'Billie Jean', 'Californication'];
-var authors = ['Beatles', 'Queen', 'Michael Jackson', 'Red Hot Chili Peppers'];
+var tops = ['Баланс близок к минусу', 'Пополните баланс'];
+var news = ['Ваш баланс равен 9,5 рубля, <br>рекомендуем вам пополнить<br>ваш баланс.', 'Баланс менее 10ти рублей, <br>рекомендуем вам пополнить<br>ваш баланс.'];
  
 // Pull to refresh content
 var ptrContent = $$('.pull-to-refresh-content');
@@ -26,19 +24,19 @@ ptrContent.on('refresh', function (e) {
     // Emulate 2s loading
     setTimeout(function () {
         // Random image
-        var picURL = 'https://dummyimage.com/44/000/fff' + Math.round(Math.random() * 100);
-        // Random song
-        var song = songs[Math.floor(Math.random() * songs.length)];
-        // Random author
-        var author = authors[Math.floor(Math.random() * authors.length)];
+        var picURL = 'http://orionnet.ru/img/logo.png';
+        // Random top
+        var top = tops[Math.floor(Math.random() * tops.length)];
+        // Random news
+        var bot = news[Math.floor(Math.random() * news.length)];
         // List item html
         var itemHTML = '<li class="item-content">' +
                           '<div class="item-media"><img src="' + picURL + '" width="44"/></div>' +
                           '<div class="item-inner">' +
                             '<div class="item-title-row">' +
-                              '<div class="item-title">' + song + '</div>' +
+                              '<div class="item-title">' + top + '</div>' +
                             '</div>' +
-                            '<div class="item-subtitle">' + author + '</div>' +
+                            '<div class="item-subtitle">' + bot + '</div>' +
                           '</div>' +
                         '</li>';
         // Prepend new list element
